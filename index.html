@@ -3,12 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <title>mometum</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="title">
-      <h1>Hello! Nice to meet you!</h1>
+    <form class="hidden login-form">
+      <input
+        required
+        maxlength="12"
+        type="text"
+        placeholder="what is your name?"
+      />
+      <button>LogIn</button>
+    </form>
+    <h2 class="clock">00:00</h2>
+    <h1 class="hidden greeting"></h1>
+    <div class="quotes">
+      <span></span><br />
+      <span></span>
     </div>
-    <script src="app.js"></script>
+    <button onclick="setColors()" class="btn">Give me colors</button>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
   </body>
 </html>

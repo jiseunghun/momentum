@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment-06</title>
+  </head>
+  <body>
+    <h1>Random Number Game</h1>
+    <form class="game_form">
+      <div>
+        <label for="betweenNumber">Generate a number between 0 and </label>
+        <input
+          class="enterNumber"
+          min="0"
+          max="1000"
+          name="betweenNumber"
+          type="number"
+        />
+      </div>
+      <div>
+        <label for="chosethenumber">guess the number : </label>
+        <input
+          min="0"
+          max="1000"
+          class="choseNumber"
+          type="number"
+          name="chosethenumber"
+        />
+        <button>Play!</button>
+      </div>
+      <div class="print_number">
+        <span class="pick_number"></span>
+        <span class="random_number"></span>
+        <div class="stats"></div>
+      </div>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
